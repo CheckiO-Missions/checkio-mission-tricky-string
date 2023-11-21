@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+
+<div class="story">
+	<p align="justify">
+		......萨曼莎坐在书桌前，眼睛扫视着面前书页上的字。她一直在反复阅读同一段文字，但她的大脑似乎无法理解文字背后的含义。当她试图集中注意力时，挫败感开始悄悄袭来，但字里行间似乎模糊不清。作者的思想仿佛隐藏在迷宫中，而她正在努力寻找正确的路径。萨曼莎深吸一口气，闭上眼睛，试图理清思绪。终于，有了突破。她一直在寻找的思想从文字中浮现出来，她重新下定决心，继续阅读。有时，阅读是一段旅程，而找到正确的思想可能是最具挑战性的部分。
+	</p>
+</div>
+
+<p align="justify">
+    你得到了一串文字。在文本的某处隐藏着一个单词 "CheckIO"。你的任务是找到单词的藏身之处，并用最少的替换次数得到它。让我们举例说明：对于<b>"xheckIO"</b> 字符串，您只需替换一个符号（将 "x "替换为 "C"）就能得到想要的单词；另一方面，我们可以尝试在更复杂的字符串中找到它：<b>"CheckzzVSCheckIz"</b>正确答案将是<b>"CheckzzVSCheckIO"</b> （只有一个替换符号将 "z "替换为 "O"）。
+</p>
+
+<ul>
+    <li>每个字符串至少包含单词 "CheckIO "七个字符中的一个，并且其周围有足够多的符号来获得所需的单词。</li>
+    <li>如果有多种完成任务的方法，只需将单词放在第一个合适的位置即可。</li>
+</ul>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>A{% if is_js %}字符串<span>(string)</span>{% else %} 字符串<span>(str)</span>{% endif %} 。
+</p>
+
+<p>
+   <strong>输出：</strong>A{% if is_js %}字符串<span>(string)</span>{% else %} 字符串<span>(str)</span>{% endif %}. 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>示例：</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+<!-- Here you can explain how it can be used in development. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>如何使用： </strong>
+    <i>提高字符串分析技能。</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <i>文本只能包含 [a-z，A-Z]、 </i>
+    <i>6 &lt; len(string) &lt; 100</i>
+</p>
