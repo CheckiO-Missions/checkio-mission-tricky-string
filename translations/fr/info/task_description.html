@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+
+<div class="story">
+	<p align="justify">
+		...Samantha était assise à son bureau, ses yeux parcourant les mots sur la page devant elle. Elle lisait le même paragraphe encore et encore, mais son esprit ne parvenait pas à saisir le sens des mots. La frustration commençait à se faire sentir alors qu'elle essayait de se concentrer, mais les mots semblaient se confondre. C'était comme si les pensées de l'auteur étaient cachées dans un labyrinthe et qu'elle avait du mal à trouver le bon chemin. Samantha prit une grande inspiration et ferma les yeux, essayant de faire le vide dans son esprit. Enfin, une percée. La pensée qu'elle cherchait a émergé du texte et elle a continué avec une détermination renouvelée. Parfois, la lecture est un voyage, et trouver la bonne pensée peut être la partie la plus difficile.
+	</p>
+</div>
+
+<p align="justify">
+    On vous donne une ficelle. Quelque part dans ce texte, le mot "CheckIO" s'est caché. Votre tâche consiste à trouver l'endroit où le mot se cache et à effectuer le nombre minimum de remplacements pour l'obtenir. Prenons un exemple: pour une chaîne de caractères <b>"xheckIO"</b>, vous ne devez remplacer qu'un seul symbole ("x" par "C") pour obtenir le mot souhaité, alors que nous pouvons essayer de le trouver dans une chaîne plus complexe: <b>"CheckzzVSCheckIz"</b> la bonne réponse sera ici la chaîne <b>"CheckzzVSCheckIO"</b> (un seul remplacement a permis de remplacer "z" par "O").
+</p>
+
+<ul>
+    <li>Chaque chaîne contient au moins un des sept caractères du mot "CheckIO" et il y a suffisamment de symboles autour pour obtenir le mot nécessaire.</li>
+    <li>S'il existe plusieurs façons d'accomplir la tâche, placez simplement le mot au premier endroit approprié.</li>
+</ul>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> A {% if is_js %}chaîne <span>(string)</span>{% else %} chaîne <span>(str)</span>{% endif %}.
+</p>
+
+<p>
+   <strong>Sortie:</strong> A {% if is_js %}chaîne <span>(string)</span>{% else %} chaîne <span>(str)</span>{% endif %}. 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Exemples:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+<!-- Here you can explain how it can be used in development. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Comment l'utiliser: </strong>
+    <i>Améliore votre capacité d'analyse des chaînes de caractères.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Condition préalable:</strong>
+    <i>Le texte ne peut contenir que [a-z, A-Z], </i>
+    <i>6 &lt; len(string) &lt; 100</i>
+</p>
