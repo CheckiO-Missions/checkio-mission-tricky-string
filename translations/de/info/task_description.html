@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+
+<div class="story">
+	<p align="justify">
+		...Samantha saß an ihrem Schreibtisch und ließ ihren Blick über die Worte auf der Seite vor ihr schweifen. Sie hatte denselben Absatz wieder und wieder gelesen, aber ihr Verstand schien die Bedeutung hinter den Worten nicht zu erfassen. Frustration machte sich in ihr breit, als sie versuchte, sich zu konzentrieren, aber die Worte schienen zu verschwimmen. Es war, als wären die Gedanken des Autors in einem Labyrinth versteckt, und sie hatte Mühe, den richtigen Weg zu finden. Samantha atmete tief durch, schloss die Augen und versuchte, einen klaren Kopf zu bekommen. Endlich, ein Durchbruch. Der Gedanke, nach dem sie gesucht hatte, tauchte aus dem Text auf, und sie machte mit neuer Entschlossenheit weiter. Manchmal ist das Lesen eine Reise, und den richtigen Gedanken zu finden, kann der schwierigste Teil sein.
+	</p>
+</div>
+
+<p align="justify">
+    Man gibt Ihnen eine Zeichenfolge. Irgendwo in diesem Text hat sich ein Wort "CheckIO" versteckt. Ihre Aufgabe ist es, die Stelle zu finden, an der sich das Wort versteckt, und so viele Ersetzungen wie möglich vorzunehmen, um es zu erhalten. Lassen Sie uns mit einem Beispiel fortfahren: bei der Zeichenkette <b>"xheckIO"</b> sollten Sie nur ein Symbol ersetzen ("x" durch "C"), um das gewünschte Wort zu erhalten. Andererseits können wir versuchen, es in einer komplexeren Zeichenkette zu finden: <b>"CheckzzVSCheckIz"</b> die richtige Antwort ist hier die Zeichenfolge <b>"CheckzzVSCheckIO"</b> (nur eine Ersetzung hat aus "z" ein "O" gemacht).
+</p>
+
+<ul>
+    <li>Jede Zeichenkette enthält mindestens eines der sieben Zeichen des Wortes "CheckIO" und es sind genügend Symbole vorhanden, um das erforderliche Wort zu erhalten.</li>
+    <li>Wenn es mehrere Möglichkeiten gibt, die Aufgabe zu lösen, setzen Sie das Wort einfach an die erste dafür geeignete Stelle.</li>
+</ul>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> A {% if is_js %}string{% else %} string <span>(str)</span>{% endif %}.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> A {% if is_js %}string{% else %} string <span>(str)</span>{% endif %}. 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+<!-- Here you can explain how it can be used in development. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Wie es verwendet wird: </strong>
+    <i>Verbessert Ihre Fähigkeit zur Analyse von Zeichenketten.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <i>Der Text darf nur [a-z, A-Z] enthalten, </i>
+    <i>6 &lt; len(Zeichenfolge) &lt; 100</i>
+</p>
