@@ -9,7 +9,8 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "tricky_string"
+            "python": "tricky_string",
+            "js": "trickyString"
         },
         cover_code={
             'python-3': {}
